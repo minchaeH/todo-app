@@ -1,7 +1,15 @@
 export let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
 export function addTodo(text) {
-  todos.push(text);
+  todos.push({
+    text: text,
+    done: false
+  });
+  save();
+}
+
+export function toggleTodo(index) {
+  todos[index].done = !todos[index].done;
   save();
 }
 

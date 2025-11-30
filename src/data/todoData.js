@@ -1,9 +1,12 @@
 export let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
-export function addTodo(text) {
+export let quote = localStorage.getItem("quote") || "";
+
+export function addTodo(text, priority) {
   todos.push({
     text: text,
-    done: false
+    done: false,
+    priority: priority
   });
   save();
 }
@@ -16,6 +19,11 @@ export function toggleTodo(index) {
 export function removeTodo(index) {
   todos.splice(index, 1);
   save();
+}
+
+export function setQuote(newQuote) {
+  quote = newQuote;
+  localStorage.setItem("quote", quote);
 }
 
 function save() {

@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>할 일 관리 앱</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="app">
-    <h1>할 일 관리 앱</h1>
-    <p id="date-time"></p>
+  <head>
+    <meta charset="UTF-8">
+    <title>할 일 관리 앱</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-    <div class="input-area">
-      <input id="todo-input" type="text" placeholder="할 일을 입력하세요">
-      <button id="add-btn">추가</button>
+  <body>
+    <div id="app">
+      <h1>할 일 관리 앱</h1>
+      <p id="date-time"></p>
+
+      <div class="input-area">
+        <input id="todo-input" type="text" placeholder="할 일을 입력하세요">
+        <select id="priority-select">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="add-btn">추가</button>
+      </div>
+
+      <p id="quote"></p>
+
+      <div class="input-area">
+        <input id="quote-input" type="text" placeholder="오늘의 명언을 입력하세요">
+        <button id="quote-btn">명언 적용</button>
+      </div>
+
+      <ul id="todo-list"></ul>
     </div>
 
-    <ul id="todo-list"></ul>
-  </div>
-
-  <script type="module" src="./src/app.js">
-  </script>
-</body>
-
+    <script type="module" src="./src/app.js"></script>
+  </body>
 </html>

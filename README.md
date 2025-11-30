@@ -31,6 +31,7 @@ HTML, CSS, JavaScript(ES Modules)를 활용하여 제작한 할 일 관리 웹 �
 4. 실행 방법
 
 방법 1) GitHub Pages에서 바로 실행 (추천)
+https://minchaeh.github.io/todo-app/
 
 방법 2) Live Server 실행 (권장)
 1. VS Code에서 프로젝트 폴더 열기

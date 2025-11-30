@@ -44,7 +44,7 @@ https://minchaeh.github.io/todo-app/
 
 ---
 
-5. 🧪 테스트 체크리스트
+5. 테스트 체크리스트
 - [x] 할 일 추가 시 목록에 정상 등록
 - [x] 체크박스 클릭 시 스타일 변화 및 상태 저장
 - [x] 삭제 버튼 기능 정상 작동
@@ -55,6 +55,6 @@ https://minchaeh.github.io/todo-app/
 
 ---
 
-6. 📄 참고 사항
+6. 참고 사항
 - Live Server가 아닌 직접 파일 열기 방식에서는 import 경로 오류가 발생할 수 있음
 - localStorage는 브라우저별로 독립적으로 저장됨
